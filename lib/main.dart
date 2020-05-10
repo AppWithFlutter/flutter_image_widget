@@ -11,7 +11,7 @@ void main() {
     MaterialApp(
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
-      home: NetworkImageWidget(),
+      home: FadeImageWidget()
     ),
   );
 }

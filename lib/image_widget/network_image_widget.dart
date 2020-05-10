@@ -22,15 +22,14 @@ class NetworkImageWidget extends StatelessWidget {
                       duration: const Duration(seconds: 2),
                       curve: Curves.easeOut,
                     ),
-          loadingBuilder: (context, child, progress) => progress == null
+          /* loadingBuilder: (context, child, progress) => progress == null
               ? child
               : LinearProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
-                ),
+                ), */
           errorBuilder:
               (BuildContext context, Object exception, StackTrace stackTrace) =>
                   Text('Failed to load image'),
-                  
         ),
       ),
     );
